@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+/* logo */
+#logo img{
+    width: 50px;
+    border-radius: 20px;
+}
+#logo{
+    padding: 9px 15px;
+    margin: 0px;
+}
+/* navigation */
+#navbar{
+    display: flex;
+    position: sticky;
+    top:0%;
+}
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul{ 
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 20px 10px;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 20px;
+   text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 20px;
+}
+/* home */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 550px ;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content:center;
+    /* border: 2px solid red;; */
+}
+#home::before{
+    content: "";
+    background:url(./imgs/bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+/* services */
+#services{
+    margin: 10px;
+   display: flex; 
+}
+#services .box{
+    border: 2px solid red;
+    margin: 3px 5px;
+    padding: 25px;
+    border-radius: 25px;
+    background-color: rgb(235, 229, 229);
+ }
+ #services .box img{
+    height:200px;
+    margin: auto;
+    display: block;
+ }
+ #services-container{
+       margin-top: 90px ;
+ }
+ /* client section */
+ #client-section{
+height: 510px;
+ }
+ #client-section::before{
+    content: "";
+    background:url(./imgs/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 510px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+     }
+ #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #clients img{
+    height: 220px;
+    border-radius: 85px;
+ }
+ .client-item{
+    padding: 30px 80px;
+ }
+ /* contact section */
+ #contact{
+    position: relative;
+ }
+ #contact::before{
+    content: "";
+    background:url(./imgs/contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+ }
+ #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #contact-box form{
+    width: 50%;
+ }
+ #contact-box label{
+    font-size: 1.2rem;
+ }
+ #contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.8rem;
+ }
+ footer{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+ }
+/* utility classes */
+.h-prim{
+    font-size: 4rem;
+    padding: 10px;
+}
+.h-prim1{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+.h-prim2{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
